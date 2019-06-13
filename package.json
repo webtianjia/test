@@ -1,0 +1,50 @@
+{
+  "name": "geek-seller-wechat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:wechat": "megalo-cli-service build",
+    "build:alipay": "megalo-cli-service build --platform alipay",
+    "build:swan": "megalo-cli-service build --platform swan",
+    "build:toutiao": "megalo-cli-service build --platform toutiao",
+    "dev:alipay": "megalo-cli-service serve --platform alipay",
+    "dev:swan": "megalo-cli-service serve --platform swan",
+    "dev:wechat": "megalo-cli-service serve",
+    "dev:toutiao": "megalo-cli-service serve --platform toutiao"
+  },
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@megalo/app"
+    ]
+  },
+  "devDependencies": {
+    "@megalo/babel-preset-app": "latest",
+    "@megalo/cli-plugin-typescript": "latest",
+    "@megalo/cli-service": "latest",
+    "@megalo/target": "latest",
+    "@megalo/template-compiler": "latest",
+    "@types/node": "^11.11.4",
+    "miniprogram-api-typings": "latest",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "typescript": "^3.4.5",
+    "vue-property-decorator": "^8.1.0"
+  },
+  "dependencies": {
+    "@megalo/api": "latest",
+    "@megalo/vhtml-plugin": "latest",
+    "flyio": "^0.6.14",
+    "marked": "^0.6.2",
+    "megalo": "latest",
+    "megalo-router": "^1.0.5",
+    "mpvue-wxparse": "^0.6.5",
+    "octoparse": "^0.4.2",
+    "os": "^0.1.1",
+    "stream": "0.0.2",
+    "vant-weapp": "^0.5.12",
+    "vuex": "^3.1.0",
+    "vuex-class": "^0.3.2",
+    "zlib": "^1.0.5"
+  }
+}
