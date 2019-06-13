@@ -45,13 +45,14 @@ export default {
             "pages/selectedProducts/selectedProducts",
             "pages/myStore/myStore",
             "pages/mySku/mySku",
-            "pages/order/orderList"
+            "pages/order/orderList",
+            //"common/login"//正确 但是加上分包报错
         ],
-        subPackages: [
+        subPackages: [ //错误
             {
                 root: "common",
                 pages: [
-                    //'login',
+                    'login',
                     'test/login'
                 ]
             }
